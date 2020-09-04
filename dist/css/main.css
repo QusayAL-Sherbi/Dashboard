@@ -6089,6 +6089,18 @@
   will-change: width;
 }
 
+.page .content-area.no-sidebar {
+  width: 100%;
+}
+
+header {
+  background-color: #CCC;
+}
+
+header .toggle-sidebar {
+  cursor: pointer;
+}
+
 .page .sidebar {
   width: 250px;
   position: fixed;
@@ -6099,6 +6111,10 @@
   padding: 15px;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.page .sidebar.no-sidebar {
+  left: -250px;
 }
 
 /*# sourceMappingURL=main.css.map */
