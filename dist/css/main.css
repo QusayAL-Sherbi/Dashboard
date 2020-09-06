@@ -6074,6 +6074,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .page {
   min-height: 100vh;
 }
@@ -6120,7 +6124,7 @@ header .toggle-sidebar {
 
 .page .sidebar .logo-area {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
