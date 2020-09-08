@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <title>Homepage</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
     <div class="page home-page">
@@ -31,7 +31,23 @@
         </ul>
       </div>
       <div class="content-area">
-        <header><i class="fas fa-exchange-alt fa-lg toggle-sidebar"></i></header>
+        <header><i class="fas fa-exchange-alt fa-lg toggle-sidebar"></i>
+          <div class="dropdown notifications-container"><i class="fas fa-bell fa-lg toggle-notifications" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications">
+              <div class="noti-head">Notifications<span>50</span></div>
+              <div class="noti-content">
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-envelope fa-lg"></i>You Got Email From Maen Altamimi</li>
+                  <li><i class="fas fa-money-bill-alt fa-lg"></i>You Got Money From Paypal</li>
+                  <li><i class="fas fa-thumbs-up fa-lg"></i>You Got Like From Bla Bla Bla </li>
+                  <li><i class="fas fa-envelope fa-lg"></i>You Got Email From Bla Bla Bla </li>
+                  <li><i class="fas fa-money-bill-alt fa-lg"></i>You Got Money From Bla Bla Bla</li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a href="#">View All Notifications</a></div>
+            </div>
+          </div>
+        </header>
         <div class="container-fluid">
           <div class="content">
             <div class="page-head">

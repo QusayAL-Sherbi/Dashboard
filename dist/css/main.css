@@ -6098,11 +6098,81 @@ body {
 
 header {
   background-color: #FFF;
-  padding: 15px;
+  padding: 20px;
 }
 
 header .toggle-sidebar {
   cursor: pointer;
+}
+
+header .notifications-container {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header .notifications-container .toggle-notifications {
+  background-color: #F9F9F9;
+  border-radius: 50%;
+  color: #555;
+  cursor: pointer;
+}
+
+header .notifications-container .dropdown-menu {
+  min-width: 600px;
+  border: none;
+  padding: 0;
+  top: 10px !important;
+}
+
+header .notifications-container .dropdown-menu:before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 6px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #333 transparent;
+}
+
+header .notifications-container .noti-head {
+  background-color: #333;
+  color: #FFF;
+  padding: 15px;
+}
+
+header .notifications-container .noti-head span {
+  float: right;
+}
+
+header .notifications-container .noti-content {
+  padding: 15px;
+}
+
+header .notifications-container .noti-content ul {
+  margin: 0;
+}
+
+header .notifications-container .noti-content ul li {
+  padding: 10px;
+}
+
+header .notifications-container .noti-content ul li svg {
+  background-color: #EEE;
+  width: 40px;
+  padding: 10px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header .notifications-container .noti-foot a {
+  display: block;
+  padding: 10px;
+  border-top: 1px solid #EEE;
+}
+
+header .notifications-container .noti-foot a:hover {
+  text-decoration: none;
 }
 
 .page .sidebar {
