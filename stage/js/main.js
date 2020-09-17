@@ -33,6 +33,15 @@ $(function () {
   });
 
 
+  $(".toggle-settings").on('click', function () {
+
+    $(this).find('svg').toggleClass('fa-spin');
+
+    $(this).parent().toggleClass('hide-settings');
+
+  });
+
+
   var elem = document.documentElement;
 
   function openFullscreen() {

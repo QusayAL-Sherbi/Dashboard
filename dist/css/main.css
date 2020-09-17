@@ -6098,7 +6098,7 @@ body {
 
 header {
   background-color: #FFF;
-  padding: 20px;
+  padding: 10px 0;
 }
 
 header .icons-contaienr {
@@ -6360,6 +6360,37 @@ header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-sign-
   width: 3px;
   height: 100%;
   background-color: #FFF;
+}
+
+.settings-box {
+  background-color: #232323;
+  color: #FFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 250px;
+  height: 100%;
+  padding: 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.settings-box .toggle-settings {
+  background-color: #232323;
+  color: #FFF;
+  position: absolute;
+  top: 100px;
+  left: -40px;
+  padding: 8px 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+}
+
+.settings-box.hide-settings {
+  right: -250px;
 }
 
 /*# sourceMappingURL=main.css.map */
