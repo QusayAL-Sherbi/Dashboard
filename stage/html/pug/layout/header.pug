@@ -1,26 +1,67 @@
 header
-  i.fas.fa-exchange-alt.fa-lg.toggle-sidebar
-  .dropdown.notifications-container
-    i.fas.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-    .dropdown-menu(aria-labelledby='notifications')
-      .noti-head
-        | Notifications
-        span 50
-      .noti-content
-        ul.list-unstyled
-          li
-            i.fas.fa-envelope.fa-lg
-            | You Got Email From Maen Altamimi
-          li
-            i.fas.fa-money-bill-alt.fa-lg
-            | You Got Money From Paypal
-          li
-            i.fas.fa-thumbs-up.fa-lg
-            | You Got Like From Bla Bla Bla 
-          li
-            i.fas.fa-envelope.fa-lg
-            | You Got Email From Bla Bla Bla 
-          li
-            i.fas.fa-money-bill-alt.fa-lg
-            | You Got Money From Bla Bla Bla
-      .noti-foot.text-center: a(href='#') View All Notifications
+  .row
+    .col-2.icons-contaienr
+      button.btn.toggle-sidebar
+        i.fas.fa-exchange-alt.fa-lg
+      .dropdown.notifications-container
+        button.btn
+          i.fas.fa-bell.fa-lg#notifications(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+          .dropdown-menu(aria-labelledby='notifications')
+            .noti-head
+              | Notifications
+              span 50
+            .noti-content
+              ul.list-unstyled
+                li
+                  i.fas.fa-envelope.fa-lg
+                  | You Got Email From Maen Altamimi
+                li
+                  i.fas.fa-money-bill-alt.fa-lg
+                  | You Got Money From Paypal
+                li
+                  i.fas.fa-thumbs-up.fa-lg
+                  | You Got Like From Bla Bla Bla 
+                li
+                  i.fas.fa-envelope.fa-lg
+                  | You Got Email From Bla Bla Bla 
+                li
+                  i.fas.fa-money-bill-alt.fa-lg
+                  | You Got Money From Bla Bla Bla
+            .noti-foot.text-center: a(href='#') View All Notifications
+      button.btn.toggle-fullscreen
+        i.fas.fa-expand-alt.fa-lg
+
+
+
+    .col-10
+      .dropdown.usermenu-container.float-right
+        .username#usermenu(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+          img.avatar.rounded-circle(src="images/Eq-Brand.png" alt="")
+          span.user Qusay AL-Sherbi
+          i.fas.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+          .user-info
+            h4 Qusay AL-Sherbi
+            p Premium Membership
+          hr
+          ul.activities-list.list-unstyled
+            li Added Comment On Post "How To Make Script With Python"
+            li Created Post In Category "Science"
+            li Added Comment On Post "How To Make Script With Php"
+            li Created Post In Category "Programming"
+            li Added Comment On Post "How To Make Script With NodeJs"
+            li Created Post In Category "Economie"
+          hr
+          .row.usermenu-links
+            .col
+              .link-box
+                i.fas.fa-cog.lg.fa-fw
+                span Settings
+            .col
+              .link-box
+                i.fas.fa-user.lg.fa-fw
+                span My Profile
+            .col
+              .link-box
+                i.fas.fa-sign-out-alt.lg.fa-fw
+                span Log Out

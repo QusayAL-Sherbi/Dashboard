@@ -1,19 +1,18 @@
 header {
   background-color: #FFF;
   padding: 20px;
+  .icons-contaienr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button:focus {
+      box-shadow: none;
+    }
+  }
   .toggle-sidebar {
     cursor: pointer;
   }
   .notifications-container {
-    display: inline-block;
-    margin-left: 20px;
-    .toggle-notifications {
-      background-color: #F9F9F9;
-      border-radius: 50%;
-      // padding: 10px;
-      color: #555;
-      cursor: pointer;
-    }
     .dropdown-menu {
       min-width: 600px;
       border: none;
@@ -23,7 +22,7 @@ header {
         content: "";
         position: absolute;
         top: -19px;
-        left: 6px;
+        left: 0;
         border-style: solid;
         border-width: 10px;
         border-color: transparent transparent #333 transparent;
@@ -33,6 +32,7 @@ header {
       background-color: #333;
       color: #FFF;
       padding: 15px;
+      font-weight: bold;
       span {
         float: right;
       }
@@ -42,14 +42,23 @@ header {
       ul {
         margin: 0;
         li {
-          padding: 10px;
+          padding: 5px;
+          font-weight: bold;
+          color: #777;
+          border-bottom: 1px solid #e9e8e8;
+          margin-bottom: 10px;
+          font-size: 15px;
           svg {
-            background-color: #EEE;
-            width: 40px;
-            padding: 10px;
-            height: 40px;
-            border-radius: 50%;
+            width: 20px;
             margin-right: 10px;
+          }
+          &:first-child {
+            padding-top: 0;
+          }
+          &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: none;
           }
         }
       }
@@ -61,6 +70,71 @@ header {
         border-top: 1px solid #EEE;
         &:hover {
           text-decoration: none;
+        }
+      }
+    }
+  }
+  .usermenu-container {
+    .username {
+      cursor: pointer;
+      .avatar {
+        width: 40px;
+        height: 40px;
+      }
+      .user {
+        font-weight: bold;
+        color: #777;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+    .dropdown-menu {
+      min-width: 600px;
+      border: 1px solid #DDD;
+      padding: 15px;
+      top: 10px !important;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -19px;
+        right: 20px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #DDD transparent;
+      }
+      .user-info {
+        h4 {
+          font-weight: bold;
+        }
+        p {
+          color: #888;
+        }
+      }
+      .activities-list {
+        li {
+          padding: 10px;
+        }
+      }
+      .usermenu-links {
+        .link-box {
+          background-color: #f3f3f3;
+          padding: 10px 15px;
+          border-radius: 4px;
+          text-align: right;
+          svg {
+            float: left;
+            position: relative;
+            top: 5px;
+            &.fa-cog {
+              color: #2980b9;
+            }
+            &.fa-user {
+              color: #16a085;
+            }
+            &.fa-sign-out-alt {
+              color: #c0392b;
+            }
+          }
         }
       }
     }

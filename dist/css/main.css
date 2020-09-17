@@ -6101,19 +6101,24 @@ header {
   padding: 20px;
 }
 
+header .icons-contaienr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .icons-contaienr button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 header .toggle-sidebar {
-  cursor: pointer;
-}
-
-header .notifications-container {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-header .notifications-container .toggle-notifications {
-  background-color: #F9F9F9;
-  border-radius: 50%;
-  color: #555;
   cursor: pointer;
 }
 
@@ -6128,7 +6133,7 @@ header .notifications-container .dropdown-menu:before {
   content: "";
   position: absolute;
   top: -19px;
-  left: 6px;
+  left: 0;
   border-style: solid;
   border-width: 10px;
   border-color: transparent transparent #333 transparent;
@@ -6138,6 +6143,7 @@ header .notifications-container .noti-head {
   background-color: #333;
   color: #FFF;
   padding: 15px;
+  font-weight: bold;
 }
 
 header .notifications-container .noti-head span {
@@ -6153,16 +6159,27 @@ header .notifications-container .noti-content ul {
 }
 
 header .notifications-container .noti-content ul li {
-  padding: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: #777;
+  border-bottom: 1px solid #e9e8e8;
+  margin-bottom: 10px;
+  font-size: 15px;
 }
 
 header .notifications-container .noti-content ul li svg {
-  background-color: #EEE;
-  width: 40px;
-  padding: 10px;
-  height: 40px;
-  border-radius: 50%;
+  width: 20px;
   margin-right: 10px;
+}
+
+header .notifications-container .noti-content ul li:first-child {
+  padding-top: 0;
+}
+
+header .notifications-container .noti-content ul li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 header .notifications-container .noti-foot a {
@@ -6173,6 +6190,76 @@ header .notifications-container .noti-foot a {
 
 header .notifications-container .noti-foot a:hover {
   text-decoration: none;
+}
+
+header .usermenu-container .username {
+  cursor: pointer;
+}
+
+header .usermenu-container .username .avatar {
+  width: 40px;
+  height: 40px;
+}
+
+header .usermenu-container .username .user {
+  font-weight: bold;
+  color: #777;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+header .usermenu-container .dropdown-menu {
+  min-width: 600px;
+  border: 1px solid #DDD;
+  padding: 15px;
+  top: 10px !important;
+}
+
+header .usermenu-container .dropdown-menu:before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  right: 20px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #DDD transparent;
+}
+
+header .usermenu-container .dropdown-menu .user-info h4 {
+  font-weight: bold;
+}
+
+header .usermenu-container .dropdown-menu .user-info p {
+  color: #888;
+}
+
+header .usermenu-container .dropdown-menu .activities-list li {
+  padding: 10px;
+}
+
+header .usermenu-container .dropdown-menu .usermenu-links .link-box {
+  background-color: #f3f3f3;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: right;
+}
+
+header .usermenu-container .dropdown-menu .usermenu-links .link-box svg {
+  float: left;
+  position: relative;
+  top: 5px;
+}
+
+header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-cog {
+  color: #2980b9;
+}
+
+header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-user {
+  color: #16a085;
+}
+
+header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-sign-out-alt {
+  color: #c0392b;
 }
 
 .page .sidebar {

@@ -17,7 +17,7 @@ gulp.task("html", function () {
     .pipe(pugCompiler({ pretty: true }))
     .pipe(gulp.dest("dist"))
     .pipe(notify("HTML Task Is Done...!"))
-    .pipe(livereload());
+    // .pipe(livereload());
 });
 
 // Strat Css(Sass) Files Compiling Task
@@ -30,7 +30,7 @@ gulp.task("css", function () {
     .pipe(concat("main.css"))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest('dist/css'))
-    .pipe(livereload());
+    // .pipe(livereload());
 });
 
 // Start Js Files Compiling Task
@@ -45,7 +45,7 @@ gulp.task("js", function () {
     .pipe(concat("main.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/js"))
-    .pipe(livereload());
+    // .pipe(livereload());
 });
 
 // Compress Files Task
@@ -60,7 +60,7 @@ gulp.task("js", function () {
 // Start Auto Watch Task
 gulp.task("watch", function () {
   require("./server.js");
-  livereload.listen();
+  // livereload.listen();
   gulp.watch("stage/**/*.pug", gulp.series("html"));
   gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], gulp.series("css"));
   gulp.watch("stage/js/*.js", gulp.series("js"));
