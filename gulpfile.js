@@ -43,7 +43,7 @@ gulp.task("js", function () {
     */
     .src("stage/js/*.js"/*, ["!stage/js/*.js"]*/)
     .pipe(concat("main.js"))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest("dist/js"))
     // .pipe(livereload());
 });

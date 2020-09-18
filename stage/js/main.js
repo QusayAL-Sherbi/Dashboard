@@ -32,7 +32,7 @@ $(function () {
   
   });
 
-
+  // Toggle Settings
   $(".toggle-settings").on('click', function () {
 
     $(this).find('svg').toggleClass('fa-spin');
@@ -41,7 +41,22 @@ $(function () {
 
   });
 
+  // Switch Colors Themes
+  var themesClasses = [];
+  $('.color-options li').each(function () {
+    themesClasses.push($(this).data('theme'));
+  });
 
+  $('.color-options li').on('click', function () {
+
+    $(this).addClass("active").siblings().removeClass("active");
+
+    // ...themesClasses (Spread Operator Of ES6) ... another method (Join)
+    $('body').removeClass(...themesClasses).addClass($(this).data('theme'));
+
+  });
+
+  
   var elem = document.documentElement;
 
   function openFullscreen() {
