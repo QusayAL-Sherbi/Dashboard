@@ -6235,7 +6235,7 @@ header .usermenu-container .username .user {
 }
 
 header .usermenu-container .dropdown-menu {
-  min-width: 600px;
+  min-width: 517px;
   border: 1px solid #DDD;
   padding: 15px;
   top: 10px !important;
@@ -6346,6 +6346,10 @@ header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-sign-
   padding-left: 25px;
 }
 
+.page .sidebar .links-area > li > a.active::before {
+  border-color: #ffc107;
+}
+
 .page .sidebar .links-area > li > a .fa-angle-right {
   float: right;
   position: relative;
@@ -6407,6 +6411,7 @@ header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-sign-
   margin-bottom: 15px;
   color: #DDD;
   text-align: center;
+  font-size: 18px;
 }
 
 .settings-box .toggle-settings {
@@ -6426,33 +6431,39 @@ header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-sign-
   right: -250px;
 }
 
+.settings-box .color-options {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #EEE;
+}
+
+.settings-box .color-options li:nth-child(1) {
+  background-color: #27ae60;
+}
+
+.settings-box .color-options li:nth-child(2) {
+  background-color: #2980b9;
+}
+
+.settings-box .color-options li:nth-child(3) {
+  background-color: #c0392b;
+}
+
+.settings-box .color-options li:nth-child(4) {
+  background-color: #d35400;
+}
+
 .settings-box .color-options ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.settings-box .color-options ul li:nth-child(1) {
-  background-color: #27ae60;
-}
-
-.settings-box .color-options ul li:nth-child(2) {
-  background-color: #2980b9;
-}
-
-.settings-box .color-options ul li:nth-child(3) {
-  background-color: #c0392b;
-}
-
-.settings-box .color-options ul li:nth-child(4) {
-  background-color: #d35400;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .settings-box .color-options ul li {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
   border-radius: 50%;
   opacity: .6;

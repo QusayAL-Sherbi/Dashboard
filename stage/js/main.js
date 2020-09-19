@@ -52,11 +52,12 @@ $(function () {
     $(this).addClass("active").siblings().removeClass("active");
 
     // ...themesClasses (Spread Operator Of ES6) ... another method (Join)
-    $('body').removeClass(...themesClasses).addClass($(this).data('theme'));
+    $('body').removeClass(themesClasses.join(" "));
+    $('body').addClass($(this).data('theme'));
 
   });
 
-  
+
   var elem = document.documentElement;
 
   function openFullscreen() {
