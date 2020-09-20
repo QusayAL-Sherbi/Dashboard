@@ -2,13 +2,20 @@
   .toggle-settings
     i.fas.fa-cog.fa-lg.fa-fw
   .settings-b-content
+
     .option-box.color-options
       h6.option-title Color Options
       - var themes = ["green-theme", "blue-theme", "red-theme", "orange-theme"]
       ul.list-unstyled
         each theme in themes
           li(data-theme=theme)
-    .option-box
+      <hr>
+    .option-box.font-Options
       h6.option-title Font Options
+      - var fonts = ["open", "public", "roboto", "source"]
+      select.form-control
+        each font in fonts
+          option(value=font)=font + ' Font'
+      <hr>
     .option-box
       h6.option-title Sidebar Options

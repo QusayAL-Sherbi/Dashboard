@@ -57,6 +57,18 @@ $(function () {
 
   });
 
+  // Switch Font Options
+  var fontClasses = [];
+  $('.font-Options select option').each(function () {
+    fontClasses.push($(this).val());
+  });
+  
+  $('.font-Options select').on('change', function () {
+
+    $('body').removeClass(fontClasses.join(" ")).addClass($(this).find('option:selected').val());
+
+  });
+
 
   var elem = document.documentElement;
 

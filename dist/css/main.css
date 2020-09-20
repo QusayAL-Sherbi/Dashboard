@@ -6091,7 +6091,23 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+body.open {
+  font-family: "Open Sans", sans-serif;
+}
+
+body.public {
+  font-family: "Public Sans", sans-serif;
+}
+
+body.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+body.source {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .page {
@@ -6406,6 +6422,11 @@ header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-sign-
   transition: .5s;
 }
 
+.settings-box .option-box hr {
+  height: 1px;
+  background-color: #FFF;
+}
+
 .settings-box .option-title {
   font-weight: bold;
   margin-bottom: 15px;
@@ -6433,7 +6454,6 @@ header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-sign-
 
 .settings-box .color-options {
   margin-bottom: 15px;
-  border-bottom: 1px solid #EEE;
 }
 
 .settings-box .color-options li:nth-child(1) {
@@ -6473,6 +6493,10 @@ header .usermenu-container .dropdown-menu .usermenu-links .link-box svg.fa-sign-
 
 .settings-box .color-options ul li.active, .settings-box .color-options ul li:hover {
   opacity: 1;
+}
+
+.settings-box .font-Options select {
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=main.css.map */
