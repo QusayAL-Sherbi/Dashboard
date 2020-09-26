@@ -1,7 +1,7 @@
 {
   "name": "Dashboard-Design",
   "version": "1.0.0",
-  "description": "Simple Dashboard",
+  "description": "Simple Dashboard Design",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
