@@ -1,7 +1,7 @@
 {
-  "name": "ultimate-course",
+  "name": "Dashboard-Design",
   "version": "1.0.0",
-  "description": "Elzero Ultimate Course",
+  "description": "Simple Dashboard",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
