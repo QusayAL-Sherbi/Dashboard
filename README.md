@@ -1,2 +1,2 @@
 # Dashboard Design
-Baisc Dashboard Design
+Simple Dashboard Design
